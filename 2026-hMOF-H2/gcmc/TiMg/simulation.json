@@ -1,0 +1,34 @@
+{
+    "SimulationType": "MonteCarlo",
+    "NumberOfCycles": 20000,
+    "NumberOfInitializationCycles": 10000,
+    "PrintEvery": 100,
+    "ForceField": ".",
+    "Systems": [
+        {
+            "Type": "Framework",
+            "Name": "ceq-TiMg-N19-N2-3c-D3h",
+            "NumberOfUnitCells": [
+                1,
+                1,
+                1
+            ],
+            "ExternalTemperature": 77,
+            "ExternalPressure": 500000,
+            "UseChargesFrom": "CIF_File",
+            "ChargeMethod": "Ewald"
+        }
+    ],
+    "Components": [
+        {
+            "Name": "h2",
+            "MoleculeDefinition": ".",
+            "FugacityCoefficient": 1.0,
+            "TranslationProbability": 1.0,
+            "RotationProbability": 1.0,
+            "ReinsertionProbability": 1.0,
+            "SwapProbability": 1.0,
+            "CreateNumberofmolecules": 0
+        }
+    ]
+}

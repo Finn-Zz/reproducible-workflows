@@ -1,0 +1,225 @@
+{
+    "PseudoAtoms": [
+        {
+            "name": "C",
+            "framework": true,
+            "print_to_output": true,
+            "element": "C",
+            "print_as": "C",
+            "mass": 12.011,
+            "source": "UFF"
+        },
+        {
+            "name": "H",
+            "framework": true,
+            "print_to_output": true,
+            "element": "H",
+            "print_as": "H",
+            "mass": 1.008,
+            "source": "UFF"
+        },
+        {
+            "name": "Ni",
+            "framework": true,
+            "print_to_output": true,
+            "element": "Ni",
+            "print_as": "Ni",
+            "mass": 58.69,
+            "source": "UFF"
+        },
+        {
+            "name": "O",
+            "framework": true,
+            "print_to_output": true,
+            "element": "O",
+            "print_as": "O",
+            "mass": 15.999,
+            "source": "UFF"
+        },
+        {
+            "name": "N",
+            "framework": true,
+            "print_to_output": true,
+            "element": "N",
+            "print_as": "N",
+            "mass": 14.0067,
+            "source": "DREIDING"
+        },
+        {
+            "name": "Zn",
+            "framework": true,
+            "print_to_output": true,
+            "element": "Zn",
+            "print_as": "Zn",
+            "mass": 65.38,
+            "source": "UFF"
+        },
+        {
+            "name": "Ti",
+            "framework": true,
+            "print_to_output": true,
+            "element": "Ti",
+            "print_as": "Ti",
+            "mass": 47.867,
+            "source": "UFF"
+        },
+        {
+            "name": "H_h2",
+            "framework": false,
+            "print_to_output": true,
+            "element": "H",
+            "print_as": "H",
+            "mass": 2.016,
+            "source": "TraPPE"
+        },
+        {
+            "name": "OT",
+            "framework": true,
+            "print_to_output": true,
+            "element": "O",
+            "print_as": "O",
+            "mass": 15.999,
+            "source": "UFF"
+        },
+        {
+            "name": "OM",
+            "framework": true,
+            "print_to_output": true,
+            "element": "O",
+            "print_as": "O",
+            "mass": 15.999,
+            "source": "UFF"
+        }
+    ],
+    "SelfInteractions": [
+        {
+            "name": "C",
+            "type": "lennard-jones",
+            "parameters": [
+                47.86,
+                3.47
+            ],
+            "source": "UFF"
+        },
+        {
+            "name": "H",
+            "type": "lennard-jones",
+            "parameters": [
+                7.625,
+                2.85
+            ],
+            "source": "UFF"
+        },
+        {
+            "name": "O",
+            "type": "lennard-jones",
+            "parameters": [
+                48.16,
+                3.03
+            ],
+            "source": "UFF"
+        },
+        {
+            "name": "N",
+            "type": "lennard-jones",
+            "parameters": [
+                38.95,
+                3.26
+            ],
+            "source": "DREIDING"
+        },
+        {
+            "name": "Zn",
+            "type": "lennard-jones",
+            "parameters": [
+                62.399,
+                2.4616
+            ],
+            "source": "UFF"
+        },
+        {
+            "name": "OT",
+            "type": "lennard-jones",
+            "parameters": [
+                48.16,
+                3.03
+            ],
+            "source": "UFF"
+        },
+        {
+            "name": "OM",
+            "type": "lennard-jones",
+            "parameters": [
+                48.16,
+                3.03
+            ],
+            "source": "UFF"
+        },
+        {
+            "name": "H_h2",
+            "type": "lennard-jones",
+            "parameters": [
+                30.1,
+                3.0642
+            ],
+            "source": "TraPPE"
+        }
+    ],
+    "BinaryInteractions": [
+        {
+            "names": [
+                "OM",
+                "H_h2"
+            ],
+            "type": "morse",
+            "parameters": [
+                1.0,
+                1.6138,
+                4.7524
+            ],
+            "source": "Fit"
+        },
+        {
+            "names": [
+                "OT",
+                "H_h2"
+            ],
+            "type": "morse",
+            "parameters": [
+                7.53,
+                1.5874,
+                4.1993
+            ],
+            "source": "Fit"
+        },
+        {
+            "names": [
+                "Ti",
+                "H_h2"
+            ],
+            "type": "morse",
+            "parameters": [
+                2272.44,
+                2.2565,
+                2.2648
+            ],
+            "source": "Fit"
+        },
+        {
+            "names": [
+                "Ni",
+                "H_h2"
+            ],
+            "type": "morse",
+            "parameters": [
+                2986.37,
+                2.1199,
+                1.9281
+            ],
+            "source": "Fit"
+        }
+    ],
+    "MixingRule": "Lorentz-Berthelot",
+    "TruncationMethod": "truncated",
+    "TailCorrections": true
+}

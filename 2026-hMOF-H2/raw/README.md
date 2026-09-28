@@ -1,5 +1,5 @@
 # Raw RASPA data
 
-The raw RASPA archives are intentionally kept outside this Git repository because they are multi-gigabyte binary files. Upload them to the approved lab storage, Zenodo, or another shared location and put the download URL in `raw_manifest/README.md`.
+The complete RASPA3 output archives are maintained outside this curated GitHub package because of their size. This repository contains the parsed adsorption tables, normalized structures, and the input files and scripts needed to interpret and regenerate the published analysis.
 
-The SHA-256 values and expected sizes are recorded in `raw_manifest/raw_archives_manifest.tsv`. After downloading an archive, verify it against that manifest before running the optional v5 rebuild utility.
+Raw archives can be provided separately to the intended reviewers. Cluster credentials, private keys, and site-specific account settings are not part of this repository.

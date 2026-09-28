@@ -9,7 +9,6 @@ This repository contains the current, professor-facing hMOF–H₂ adsorption an
 
 - **432 designed heterometallic frameworks**: 144 topology–linker combinations × TiCo, TiMg, and TiNi.
 - **6,912 adsorption states**: 8 temperatures × 2 pressures.
-- v5 status at this snapshot: **6,822 complete rows and 90 pending rows**.
 - **432 normalized CIF inputs**, with file hashes in `structures/structure_manifest_432.csv`.
 - [`structures/README.md`](structures/README.md): the normalized CIF inputs and the `structures/BBs/` connection-oriented building-block/node coordinate inputs used for structure generation.
 - The 584-row Zeo++ master table, including all 432 current v5 structure IDs.

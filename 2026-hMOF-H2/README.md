@@ -9,12 +9,15 @@ This repository contains the current, professor-facing hMOF–H₂ adsorption an
 
 - **432 designed heterometallic frameworks**: 144 topology–linker combinations × TiCo, TiMg, and TiNi.
 - **6,912 adsorption states**: 8 temperatures × 2 pressures.
+- v5 status at this snapshot: **6,822 complete rows and 90 pending rows**.
 - **432 normalized CIF inputs**, with file hashes in `structures/structure_manifest_432.csv`.
 - [`structures/README.md`](structures/README.md): the normalized CIF inputs and the `structures/BBs/` connection-oriented building-block/node coordinate inputs used for structure generation.
 - The 584-row Zeo++ master table, including all 432 current v5 structure IDs.
 - Validation, working-capacity, correlation, and plotting scripts, together with the generated analysis tables.
-- `gcmc/TiCo`, `gcmc/TiMg`, and `gcmc/TiNi`: the metal-specific RASPA3 input bundles (`h2.json`, `force_field.json`, `simulation.json`, and a matching example CIF).
+- `gcmc/TiCo`, `gcmc/TiMg`, and `gcmc/TiNi`: the metal-specific RASPA3 input bundles (`h2.json`, `force_field.json`, `simulation.json`, and a matching example CIF) plus one matching completed 77 K, 5 bar result directory for each metal. See [`gcmc/README.md`](gcmc/README.md) and `gcmc/result_manifest.csv`.
+- `data/KISTI_adsorption_overall_summary_v5.csv`: the full 432-design × 8-temperature × 2-pressure results/status table (6,912 rows at this snapshot: 6,822 completed and 90 pending). The available-condition working-capacity and correlation tables are in `outputs/`; pending conditions are not treated as completed calculations.
 - `screening/qmof_filter/`: the calibrated QMOF local-geometry model, scoring code, parameters, and per-metal score/manifest tables.
 - `screening/topology/`: the coordination-figure, building-block/topology compatibility tables, and 14 compact net definitions used upstream.
 - `validation/`: the three conventional structural-plausibility result sets for the 432 adsorption structures.
 - [`relaxation/`](relaxation/README.md): the Materials Studio Forcite/UFF macro and the LAMMPS/UFF4MOF preparation, relayed minimization, and bonded-topology restoration scripts used before GCMC.
+- Three matching RASPA3 stdout/JSON/restart examples are included. The complete raw archive for all runs is not included and can be provided separately if needed.

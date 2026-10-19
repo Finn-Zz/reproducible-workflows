@@ -12,6 +12,7 @@ This repository contains the current, professor-facing hMOF–H₂ adsorption an
 - v5 status at this snapshot: **6,822 complete rows and 90 pending rows**.
 - **432 normalized CIF inputs**, with file hashes in `structures/structure_manifest_432.csv`.
 - [`structures/README.md`](structures/README.md): the normalized CIF inputs and the `structures/BBs/` connection-oriented building-block/node coordinate inputs used for structure generation.
+- [`controls/coordination_figure/`](controls/coordination_figure/README.md): 448 completed UFF4MOF-optimized CIFs on coordination-figure control nets, the complete 624-design structure-check CSV, and an explanation of why the control set was generated and how it differs from the preliminary L2 comparison.
 - The 584-row Zeo++ master table, including all 432 current v5 structure IDs.
 - Validation, working-capacity, correlation, and plotting scripts, together with the generated analysis tables.
 - [`gcmc/input/`](gcmc/input/) and [`gcmc/output/`](gcmc/output/): paired RASPA3 input and result folders for **all 432 frameworks at 298 K and 5 bar**, organized into 144 structures each for TiCo, TiMg, and TiNi. The [GCMC README](gcmc/README.md) explains the files, conditions, and source manifests. Three separate 77 K, 5 bar examples remain in `gcmc/TiCo/`, `gcmc/TiMg/`, and `gcmc/TiNi/`.
